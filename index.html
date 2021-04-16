@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+        <title>Shopping Cart | Home Page</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+        <script src="https://kit.fontawesome.com/3a35d40927.js" crossorigin="anonymous"></script>
+
+        <!-- [if lt IE 9]>
+            <script src="html5shiv.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container">
+                <div class="nav" id="nav">
+                    <div class="logo">
+                        <a href="index.html">Shopping Cart</a>
+                    </div>
+
+                    <ul class="nav-list" id="not-logged">
+                        <li class="cart-icon"><span class="fas fa-shopping-cart cart link"><span class="badge"></span></span></li>
+                        <div class="cart-ui">
+                            <span class="empty-cart-msg">your cart is empty!</span>
+                            <div class="product-in-cart">
+                                <div class="cart-nav">
+                                    <span class="cart-nav-item">Item</span>
+                                    <span class="cart-nav-quantity">Quantity</span>
+                                    <span class="cart-nav-price">Price</span>
+                                </div>
+                                <div class="cartItemUI">
+                                    <div class="cart-item-info">
+                                        <div class="img-title-product-cart">
+                                            <img class="cart-img" src="images/Products/cat.jpg" alt="" width="50px" height="50">
+                                            <span class="product-title-cart">Cat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="remove-qty-section">
+                                    <div class="quantity-remove-product-cart">
+                                        <input class="quantity-cart" type="number" value="1">
+                                        <button class="remove-product-cart">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="price-usd">
+                                    <span class="product-price-cart">200</span>
+                                    <p class="product-price-cart">USD</p>
+
+                                </div>
+                                <div class="total">
+                                    <div class="total-price-info">
+                                        <h2 class="total-price">Total: </h2>
+                                        <span>USD 0</span>
+                                    </div>
+                                    <button class="check-out-btn">Check Out</button>
+                                </div>
+                            </div>
+                        </div>
+                        <li><a href="#" class="link">Categories</a></li>
+                        <li><a href="#" class="link">Contact Us</a></li>
+                        <li><a href="register.html" class="link">Sign Up</a></li>
+                        <li><a href="login.html" class="link">Sign In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="slideshow">
+            <div class="container">
+                    <img src="" alt="" width="100%" id="slideshow">
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="title">
+                    <h2>Categories</h2>
+                    <p class="line"></p>
+                </div>
+                <div class="categories-items">
+                    <div class="category-item">
+                        <img src="images/Categories/Accessories.jpg" alt="Accessories">
+                        <div class="category-text">
+                            <h2>Accessories</h2>
+                            <span>Shop Now</span>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <img src="images/Categories/Shoes 2.jpg" alt="Shoes">
+                        <div class="category-text">
+                            <h2>Shoes & Sneakers</h2>
+                            <span>Shop Now</span>
+                        </div>
+                    </div>
+                    <div class="category-item tshirt">
+                        <img src="images/Categories/Hoodie.jpg" alt="Hoodie">
+                        <div class="category-text">
+                            <h2>Clothes</h2>
+                            <span>Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-2">
+                    <div class="category-item">
+                        <img src="images/Categories/Tech.jpg" alt="Technology">
+                        <div class="category-text">
+                            <h2>Technology</h2>
+                            <span>Shop Now</span>
+                        </div>
+                    </div>
+                    <div class="category-item">
+                        <img src="images/Categories/Furniture 2.jpg" alt="Furniture">
+                        <div class="category-text">
+                            <h2>Furniture</h2>
+                            <span>Shop Now</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="sale-link">
+                    <div class="sale">
+                        <div class="sale-text">
+                            <h2>SALES</h2>
+                            <span>Sales up to 50%</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+<!-- *************** Products ***************-->
+        <section class="home">
+            <div class="container">
+                <div class="title">
+                    <h2>Products</h2>
+                    <p class="line"></p>
+                </div>
+                <div class="products">
+                        
+                        <input type="text" id="search" placeholder="Search by title...">
+                        <div class="products-container">
+                            <div class="product-item"> 
+                                <div class="product-img-container">
+                                <img src="images/Products/sunglasses.jpg" alt="sunglasses" class="product-img">
+                                </div>
+                                <div class="product-text">
+                                    <h2 class="product-title">Sunglasses</h2>
+                                    <span class="product-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nulla adipisci fugiat pariatur recusandae repudiandae fuga molestias doloremque itaque obcaecati.</span>
+                                    <p class="product-price">USD 80</p>
+                                </div>
+                                <div class="product-btns">
+                                    <button class="add-to-cart">Add To Cart</button>
+                                    <button class="heart-icon"><i class="far fa-heart"></i></button>
+                                </div>
+                            </div>
+        
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="create product.html" class="create-product-icon">+</a>
+        
+
+
+    <script src="js/data.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/script.js"></script>
+
+    </body>
+</html>

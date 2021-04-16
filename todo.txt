@@ -1,0 +1,12 @@
+- add to cart
+- remove from cart
+- login | register | logout
+- filter by size/name
+- search by name
+- add to favourites
+- create product
+- edit product
+- remove product
+- dont dublicate items in cart
+- product details
+- 
